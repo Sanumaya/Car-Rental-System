@@ -6,7 +6,8 @@
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <title>Car Rental Website</title>
         <!-- LInk TO CSS-->
-        <link rel="Stylesheet" href="style.css">
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
          <!-- Box Icons -->
          <link rel="stylesheet"
          href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
@@ -14,7 +15,7 @@
         <body>
         <!-- Header -->
         <header>
-            <a href="#" class="logo"><img src="img/jeep.png" alt=""></a>
+            <a href="#" class="logo"><img src="/static/images/jeep.png" alt=""></a>
 
             <div class="bx bx-menu" id="menu-icon"></div>
 
@@ -22,12 +23,12 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#ride">Ride</a></li>
                 <li><a href="#services">Services</a></li>
-                <li><a href="#about">about</a></li>
-                <li><a href="#reviews">reviews</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#reviews">Reviews</a></li>
             </ul>
             <div class="header-btn">
-                <a href="#" class="sign-up">sign-up</a>
-                <a href="#" class="sign-in">sign-in</a>
+                <a href="#" class="sign-up">SignUp</a>
+                <a href="#" class="sign-in">LogIn</a>
             </div>
         </header>
         <!-- Home-->
@@ -36,8 +37,8 @@
                 <h1><span>looking</span> to <br> rent a car</h1>
                 <p> CAR CAR CAR</p>
                 <div class="app-stores">
-                    <img src="img/ios.png" alt="">
-                    <img src="img/512x512.png" alt="">
+                    <img src="/static/images/ios.png" alt="">
+                    <img src="/static/images/512x512.png" alt="">
                 </div>
             </div>
             <div class="form-container"></div>
@@ -88,7 +89,7 @@
             <div class="Services-container">
                 <div class="box">
                     <div class="box-img">
-                        <img src="img/car1.jpg" alt="">
+                        <img src="/static/images/car1.jpg" alt="">
                     </div>
                     <p>2017</p>
                     <h3>2018 Honda Civic</h3>
@@ -98,7 +99,7 @@
 
                 <div class="box">
                     <div class="box-img">
-                        <img src="img/car2.jpg" alt="">
+                        <img src="/static/images/car2.jpg" alt="">
                     </div>
                     <p>2017</p>
                     <h3>2018 Honda Civic</h3>
@@ -107,7 +108,7 @@
                 </div>
                 <div class="box">
                     <div class="box-img">
-                        <img src="img/car3.jpg" alt="">
+                        <img src="/static/images/car3.jpg" alt="">
                     </div>
                     <p>2017</p>
                     <h3>2018 Honda Civic</h3>
@@ -116,7 +117,7 @@
                 </div>
                 <div class="box">
                     <div class="box-img">
-                        <img src="img/car4.jpg" alt="">
+                        <img src="/static/images/car4.jpg" alt="">
                     </div>
                     <p>2017</p>
                     <h3>2018 Honda Civic</h3>
@@ -125,7 +126,7 @@
                 </div>
                 <div class="box">
                     <div class="box-img">
-                        <img src="img/car5.jpg" alt="">
+                        <img src="/static/images/car5.jpg" alt="">
                     </div>
                     <p>2017</p>
                     <h3>2018 Honda Civic</h3>
@@ -134,7 +135,7 @@
                 </div>
                 <div class="box">
                     <div class="box-img">
-                        <img src="img/car6.jpg" alt="">
+                        <img src="/static/images/car6.jpg" alt="">
                     </div>
                     <p>2017</p>
                     <h3>2018 Honda Civic</h3>
@@ -153,7 +154,7 @@
             </div>
             <div class="about-container">
                 <div class="about-img">
-                    <img src="img/about.png" alt="">
+                    <img src="/static/images/about.png" alt="">
                 </div>
                 <div class="about-text">
                     <span>About Us</span>
@@ -172,7 +173,7 @@
                     <div class="box">
                         <div class="box">
                             <div class="rev-img">
-                                <img src="img/rev1.jpg" alt="">
+                                <img src="/static/images/rev1.jpg" alt="">
                             </div>
                             <h2>Someone Name</h2>
                             <div class="stars"></div>
@@ -187,7 +188,7 @@
                     <div class="box">
                         <div class="box">
                             <div class="rev-img">
-                                <img src="img/rev2.jpg" alt="">
+                                <img src="/static/images/rev2.jpg" alt="">
                             </div>
                             <h2>Someone Name</h2>
                             <div class="stars"></div>
@@ -202,7 +203,7 @@
                     <div class="box">
                         <div class="box">
                             <div class="rev-img">
-                                <img src="img/rev3.jpg" alt="">
+                                <img src="/static/images/rev3.jpg" alt="">
                             </div>
                             <h2>Someone Name</h2>
                             <div class="stars"></div>
@@ -239,10 +240,10 @@
 <script src="https://unpkg.com/scrollreveal"></script>
 
     <!-- Link To JS-->
-    <script src="main.js"></script>
-
-
-
+    {% load static %}
+{% block custom_js %}
+<script src="{% static 'js/script.js' %}"></script>
+{% endblock %}
 
 
     </body>

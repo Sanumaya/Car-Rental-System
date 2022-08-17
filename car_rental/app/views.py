@@ -5,4 +5,4 @@ def layouts_base(request):
     context = {
         "welcome_msg": "Welcome to Information Tracker",
     }
-    return render(request, "layouts/base.html.html", context)
+    return render(request, "layouts/base.html", context)
