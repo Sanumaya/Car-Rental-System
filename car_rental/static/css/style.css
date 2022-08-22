@@ -48,7 +48,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #eeeff1;
+    background-color: #fe5b3d;
     padding: 15px 100px;
 }
 
@@ -58,6 +58,7 @@ header {
 
 .navbar {
     display: flex;
+    background-color: #fe5b3d;
 }
 
 .navbar li {
